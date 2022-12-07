@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "PageFetcher": {
+      "commandName": "Project",
+      "commandLineArgs": "--metadata https://www.google.com https://www.example.com"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

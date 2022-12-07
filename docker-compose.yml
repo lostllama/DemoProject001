@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  pagefetcher:
+    image: ${DOCKER_REGISTRY-}pagefetcher
+    build:
+      context: .
+      dockerfile: PageFetcher/Dockerfile
+  pagefetcher.tests:
+    image: ${DOCKER_REGISTRY-}pagefetchertests
+    build:
+      context: .
+      dockerfile: PageFetcher.Tests/Dockerfile
